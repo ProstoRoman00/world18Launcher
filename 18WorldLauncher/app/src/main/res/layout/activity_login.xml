@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="602dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                app:srcCompat="@mipmap/ic_ava" />
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:gravity="center"
+                android:text="Добро пожаловать в World18"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Логин" />
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Пароль" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/mmLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Войти" />
+
+            <Button
+                android:id="@+id/mmRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Стать тренером" />
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>
